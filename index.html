@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Showcase - วิดีโอตัวอย่างงาน</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      margin-bottom: 6px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .video-card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      width: 100%;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      outline: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ผลงานตัวอย่างสำหรับลูกค้า</h1>
+  <p>วิดีโอพรีเซนต์โปรเจกต์</p>
+
+  <div class="video-card">
+    <video controls controlsList="nodownload">
+      <source src="./video/gang.mp4" type="video/mp4">
+      เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอนี้
+    </video>
+  </div>
+
+</body>
+</html>
