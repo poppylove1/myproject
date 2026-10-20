@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Showcase - วิดีโอตัวอย่างงาน</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    h1 {
-      margin-bottom: 6px;
-      font-size: 1.8rem;
-      text-align: center;
-    }
-    p {
-      color: #94a3b8;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .video-card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-      max-width: 800px;
-      width: 100%;
-    }
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      outline: none;
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>ตัวอย่าง - Bot Gang</title>
+    <meta name="description" content="วิดีโอตัวอย่างผลงานสำหรับตรวจรับงาน">
+
+    <meta property="og:site_name" content="Poppylove Showcase">
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="วิดีโอตัวอย่างผลงานสำหรับตรวจรับงาน (Project Preview)">
+    <meta property="og:description" content="วิดีโอพรีเซนต์ตัวอย่างระบบสำหรับลูกค้า">
+    <meta property="og:url" content="https://YOUR-DOMAIN/">
+    <meta property="og:image" content="https://YOUR-DOMAIN/video/poster.jpg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:video" content="https://YOUR-DOMAIN/video/gang.mp4">
+    <meta property="og:video:secure_url" content="https://YOUR-DOMAIN/video/gang.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="วิดีโอตัวอย่างผลงานสำหรับตรวจรับงาน (Project Preview)">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN/video/poster.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-  <h1>ผลงานตัวอย่างสำหรับลูกค้า</h1>
-  <p>วิดีโอพรีเซนต์โปรเจกต์</p>
+    <main class="container">
+        <div class="player">
+            <video src="./video/gang.mp4#t=0.001" poster="./video/poster.jpg" controls controlsList="nodownload"
+                playsinline preload="metadata">
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอนี้
+            </video>
+            <p class="player-error" hidden>เล่นวิดีโอไม่ได้ กรุณารีเฟรชหน้านี้หรือเปิดด้วยเบราว์เซอร์อื่น</p>
+        </div>
 
-  <div class="video-card">
-    <video controls controlsList="nodownload">
-      <source src="./video/gang.mp4" type="video/mp4">
-      เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอนี้
-    </video>
-  </div>
+        <section class="video-details">
+            <h1 class="video-title">วิดีโอตัวอย่างผลงานสำหรับตรวจรับงาน (Project Preview)</h1>
 
+            <div class="channel-bar">
+                <div class="channel-info">
+                    <div class="avatar">P</div>
+                    <div>
+                        <div class="channel-name">Poppylove Showcase</div>
+                        <div class="channel-status">Official Client Preview</div>
+                    </div>
+                </div>
+                <div class="badge">Private Review</div>
+            </div>
+
+            <div class="description-box">
+                <div class="description-meta">รายละเอียดการนำเสนอ • อัปเดตล่าสุด</div>
+                <p>วิดีโอพรีเซนต์ตัวอย่างระบบสำหรับลูกค้า สามารถเปิดรับชมความคมชัดระดับ HD ได้ผ่านทางเบราว์เซอร์
+                    หากมีข้อสงสัยหรือต้องการให้ปรับแก้ส่วนใดเพิ่มเติม สามารถแจ้งรายละเอียดได้เลยครับ</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/player.js" defer></script>
 </body>
+
 </html>
